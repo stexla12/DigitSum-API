@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DigitSumController {
+
+    Implementation i = new Implementation();
     @RequestMapping("/Digitsum")
     public int calculateDigitSum(@RequestParam int number) {
         int digitSum = 0;
