@@ -6,8 +6,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class DigitSumApiApplicationTests {
 
+	Implementation sut = new Implementation();
 	@Test
-	void contextLoads() {
+	void calculateDigitSum() {
+		var result = sut.calculateDigitSum(123);
+		var expected = 6;
 	}
 
 }
